@@ -51,8 +51,12 @@ language.
 - Edit Makefile to add xx to LANGUAGES and xx.mo to MOFILES.
 - If you haven't done so already, run ./configure in the top vim directory
   (i.e. go up two directories) and then come back here afterwards.
-- run "make vim.pot" and then "msginit -l xx", it will generate a vim.pot file
-  which is used by msginit to generate a correct xx.po file.
+- Execute these commands:
+  % make vim.pot
+  % msginit -l xx
+  % rm vim.pot
+  The first command will generate a vim.pot file which is used by msginit to
+  generate a correct xx.po file.  After that vim.pot is not needed.
 - The remaining work is like updating, see the next section.
 
 
